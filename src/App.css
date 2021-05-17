@@ -1,38 +1,82 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+  font-weight: 100;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+.buttonsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  width: 30rem;
+  margin: auto;
+}
+button {
+  border-radius: 5rem;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  background: none;
+  width: 180px;
+  height: 3rem;
+  text-transform: uppercase;
+  display: flex;
+}
+.button1 {
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button1:hover {
+  background-color: black;
+  border: none;
+  color: white;
+  fill: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button2 {
+  background-color: hotpink;
+  color: white;
+  border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button2:hover {
+  background-color: #663399;
+  border: none;
+}
+
+button p {
+  align-self: center;
+}
+svg {
+  margin: 1rem;
+  align-self: center;
+}
+.test p {
+  margin-bottom: 2rem;
+}
+
+.content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 60vw;
+  margin: 10vh auto;
+  background: linear-gradient(129.35deg, #ff69b4 -50.02%, #663399 100.51%);
   color: white;
+  border-radius: 2rem;
+  padding: 2rem;
+
+  font-weight: 600;
+
+  font-size: 1.2rem;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.test {
 }
